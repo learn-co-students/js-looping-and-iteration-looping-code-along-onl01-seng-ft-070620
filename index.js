@@ -1,14 +1,14 @@
-let new_array = [];
 
-function writeCards(name_array, event_name) {
-  for (let i = 0; i < name_array.length; i++) {
-    new_array.push(`Thank you, ${name_array[i]}, for the wonderful ${event_name} gift!`);
+function writeCards(namesArray, eventName) {
+  let newArray = [];
+  for (let i = 0; i < namesArray.length; i++) {
+    newArray.push(`Thank you, ${namesArray[i]}, for the wonderful ${eventName} gift!`);
   }
-  return new_array;
+  return newArray;
 }
 
 function countDown(num) {
-  while (num > -1) {
+  while (num >= 0) {
     console.log(num);
     num--;
   }
